@@ -1,0 +1,24 @@
+{
+  "name": "angular.im",
+  "version": "0.1.0",
+  "devDependencies": {
+    "angular": "~1.2.26"
+  },
+  "authors": [
+    "Stepan Suvorov <stevermeister@gmail.com>"
+  ],
+  "description": "Skype chat room feed with profound filtering and display options",
+  "license": "MIT",
+  "homepage": "https://github.com/stevermeister/angular.im",
+  "keywords": [
+    "angular",
+    "skype",
+    "chat",
+    "feed"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ]
+}
+
