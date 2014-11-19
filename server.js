@@ -1,9 +1,12 @@
 var http = require('http');
+var fs = require('fs');
 
 var app = http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<html><head><title>Some page that does nothing</title></head><body><h1>It works!</h1></body></html>');
-  res.end();  
+  fs.readFile('./src/index.html', function (err, data) {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write(data);
+    res.end();  
+  });
 });
 
 module.exports = app;
