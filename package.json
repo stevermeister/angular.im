@@ -10,7 +10,5 @@
     "grunt": "~0.4.5",
     "grunt-cli": "~0.1.13"
   },
-  "dependencies": {
-    "sprintf": "~0.1.4"
-  }
+  "dependencies": {}
 }
