@@ -1,13 +1,22 @@
 module.exports = function(grunt) {
-  grunt.initConfig({});
+  grunt.initConfig({
+    server: {
+      options: {
+        server: './server.js'
+      }
+    }
+  });
 
   grunt.registerTask('install', []);
   grunt.registerTask('test', []);
   grunt.registerTask('build', ['test']);
-  grunt.registerTask('start', 'Start a web server', function() {
+  grunt.registerTask('server', 'Start a web server', function() {
+    var name = this.name;
+    grunt.config.requires([name, 'options', 'server']);
     var port = Number(process.env.PORT || 8000);
     var done = this.async();
-    grunt.log.writeln(sprintf('Starting web server on port ' + port + '.'));
-    require('./server.js').listen(port).on('close', done);
+    grunt.log.writeln('Starting web server on port ' + port + '.');
+    require(grunt.config([name, 'options', 'server'])).listen(port).on('close', done);
   });
+  grunt.registerTask('start', ['server']);
 }
