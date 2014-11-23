@@ -5,10 +5,19 @@ module.exports = function(grunt) {
         server: './server.js',
         port: Number(process.env.PORT || 8000)
       }
+    },
+    copy: {
+       dev: {
+         files: [
+           {src: 'bower_components/angular/angular.js', dest:'public/javascript/libs/angular.js'},
+           {src: 'bower_components/bootstrap-css-only/css/bootstrap.min.css', dest:'public/styles/libs/bootstrap.min.css'}
+         ]
+       }
     }
   });
 
-  grunt.registerTask('install', []);
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('install', ['copy']);
   grunt.registerTask('test', []);
   grunt.registerTask('build', ['test']);
   grunt.registerTask('server', 'Start a web server', function() {

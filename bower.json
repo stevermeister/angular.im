@@ -2,7 +2,8 @@
   "name": "angular.im",
   "version": "0.1.0",
   "devDependencies": {
-    "angular": "~1.2.26"
+    "angular": "~1.2.26",
+    "bootstrap-css-only": "~3.3.0"
   },
   "authors": [
     "Stepan Suvorov <stevermeister@gmail.com>"
@@ -21,4 +22,3 @@
     "bower_components"
   ]
 }
-
