@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Angular.im &ndash; публичный фид чата по AngularJS</title>
+    <link href="http://weloveiconfonts.com/api/?family=entypo" type="text/css" rel="stylesheet"/>
+    <link href="styles/libs/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="styles/main.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="javascript/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/libs/angular.js"></script>
+    <script type="text/javascript" src="javascript/libs/ngFacebook.js"></script>
+    <script type="text/javascript" src="javascript/app/templates.js"></script>
+    <script type="text/javascript" src="javascript/app/app.js"></script>
+</head>
+<body ng-app="angularIm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-xs-8">
+                <chat-widget></chat-widget>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <login-widget></login-widget>
+                <user-list-widget></user-list-widget>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container text-center text-muted">
+            <p>Angular.im — публичный фид чата по AngularJS. Создан <a href="http://stepansuvorov.com">Степаном Суворовым</a> и <a href="http://pereborstudio.com">Сергеем Переверзевым</a>. <a href="https://github.com/stevermeister/angular.im">Страница на ГитХабе</a></p>
+        </div>
+    </footer>
+</body>
+</html>
