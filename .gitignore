@@ -3,3 +3,5 @@ node_modules/
 bower_components/
 public/javascript/libs
 public/styles/libs
+public/styles/main.css
+public/javascript/app/templates.js
