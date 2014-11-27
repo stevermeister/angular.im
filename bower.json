@@ -1,7 +1,7 @@
 {
   "name": "angular.im",
   "version": "0.1.0",
-  "devDependencies": {
+  "dependencies": {
     "angular": "~1.2.26",
     "bootstrap-css-only": "~3.3.0"
   },
